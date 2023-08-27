@@ -15,8 +15,8 @@ jobs:
     - name: Create commit
       run: |
         echo "Automated commit on $(date)" >> automation.txt
-        git config --global user.email "safwanmohd52@gmail.com"
-        git config --global user.name "safXcode"
+        git config --global user.email "exampleuser@gmail.com"
+        git config --global user.name "user"
         git add automation.txt
         git commit -m "Automated commit"
         git push
