@@ -1,22 +1,22 @@
-name: Daily Commit
+# name: Daily Commit
 
-on:
-  schedule:
-    - cron: '*/5 * * * *'
+# on:
+#   schedule:
+#     - cron: '*/5 * * * *'
 
-jobs:
-  commit:
-    runs-on: ubuntu-latest
+# jobs:
+#   commit:
+#     runs-on: ubuntu-latest
 
-    steps:
-    - name: Check out repository
-      uses: actions/checkout@v3
+#     steps:
+#     - name: Check out repository
+#       uses: actions/checkout@v3
 
-    - name: Create commit
-      run: |
-        echo "Automated commit on $(date)" >> automation.txt
-        git config --global user.email "exampleuser@gmail.com"
-        git config --global user.name "user"
-        git add automation.txt
-        git commit -m "Automated commit"
-        git push
+#     - name: Create commit
+#       run: |
+#         echo "Automated commit on $(date)" >> automation.txt
+#         git config --global user.email "exampleuser@gmail.com"
+#         git config --global user.name "user"
+#         git add automation.txt
+#         git commit -m "Automated commit"
+#         git push
